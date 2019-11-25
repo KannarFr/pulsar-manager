@@ -15,7 +15,7 @@ module.exports = {
   NODE_ENV: '"development"',
   ENV_CONFIG: '"dev"',
   // BASE_API: '"//127.0.0.1:443"',
-  BASE_API: '"https://pulsarmanager.cleverapps.io:8080"',
+  BASE_API: '"https://pulsarmanager.services.clever-cloud.com"',
   USE_TLS: 'true',
   GRAFANA_ADDRESS: '""',
   PROMETHEUS_ADDRESS: '""',

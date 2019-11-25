@@ -24,22 +24,25 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api/*': {
-        target: 'http://localhost:3000/',
+        target: 'https://localhost:3000/',
         changeOrigin: true
       },
       '/admin/*': {
         // target: 'http://localhost:443/',
-        target: 'http://localhost:7750/',
+        // target: 'https://localhost:7750/',
+        target: process.env.PULSAR_MANAGER_BACKEND_URL,
         changeOrigin: true
       },
       '/pulsar-manager/*': {
         // target: 'http://localhost:443/',
-        target: 'http://localhost:7750/',
+        // target: 'http://localhost:7750/',
+        target: process.env.PULSAR_MANAGER_BACKEND_URL,
         changeOrigin: true
       },
       '/lookup/*': {
         // target: 'http://localhost:443/',
-        target: 'http://localhost:7750/',
+        // target: 'http://localhost:7750/',
+        target: process.env.PULSAR_MANAGER_BACKEND_URL,
         changeOrigin: true
       }
     },
