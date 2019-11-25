@@ -1,5 +1,5 @@
 {
   "deploy": {
-    "goal": "./gradlew build -x test"
+    "goal": "gradlew build -x test"
   }
 }
